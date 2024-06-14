@@ -7,16 +7,13 @@
     <link rel="stylesheet" href="common.css" />
   </head>
   <body>
-    <div>
+    <div id="bookHidden">
       <img src="./book.png" alt="고백 -책 표지 png" />
+      <button>책 설명 보기</button>
     </div>
     <div id="root">
       <h2>고백 (추리소설) - 작가: 미나토 가나에</h2>
       <p>
-        전개는 철저하게 상대 없는 대화체(1장, 2장, 6장) 혹은 독백체(3장, 4장,
-        5장) 형식으로 구성되어 있으며, 어느 한 인물의 독백에서 몰랐던 사실이
-        다른 인물의 독백을 통해서 드러나기도 한다. 이 점은 영화에서도 잘
-        반영되었다. 1장 '성직자'가 일본에서 제29회 '소설 추리' 신인상을 수상하며
         미나토 가나에가 작가 데뷔를 하였으며, 고백은 성직자의 뒷이야기를 그리고
         있다. 즉, 소설이나 영화나 모두가 좋다고 말하는 교실에서 여교사의 고백
         장면은 원래 하나의 완성된 단편인 것. 이 부분이 독자적으로 완성도가 높은
@@ -45,9 +42,21 @@
         무엇인가? 유족의 입장에서 과연 "공평하다"는 것은 무엇을 의미하냐는 점을
         생각하게 해 준다. 인간이 인권을 함부로 유린할 권리가 있는가? '인권'이란
         무엇인지에 대한 본질적 질문이 뒤따른다. 소설을 읽었거나 영화를 보았던
-        독자라면 한 번쯤 생각해볼 만한 질문으로 보인다. 이 소설은 총 6장의
-        내용으로 구성되어 있다. 이하 작중 스포일러.
+        독자라면 한 번쯤 생각해볼 만한 질문으로 보인다.
       </p>
     </div>
+    <script>
+      const root = document.getElementById("root");
+      // console.log(root);
+      const img = document.getElementsByTagName("img");
+      // console.log(img);
+
+      const button = document.querySelector("button");
+      addEventListener("click", (e) => {
+        if (button.textContent === "책 설명 보기") {
+          document.getElementById("bookHidden").style.display = "none";
+        }
+      });
+    </script>
   </body>
 </html>
