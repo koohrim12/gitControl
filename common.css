@@ -1,11 +1,11 @@
 #root {
-  width: 80%;
+  width: 500px;
   height: 100vh;
   background-color: bisque;
   position: relative;
 }
 img {
-  width: 80%;
+  width: 500px;
   height: 100vh;
   position: absolute;
   z-index: 1;
